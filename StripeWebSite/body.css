@@ -1,0 +1,85 @@
+.financial-text {
+  width: 31rem;
+  height: 7.3rem;
+  font-size: 1.90em;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  margin-top: 1em;
+  color: #0a2540;
+}
+
+.financial-btn {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  border: none;
+  font-weight: bold;
+  margin-block-start: 2em;
+}
+
+.start-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a2540;
+  color: #fff;
+  width: 7rem;
+  height: 2.4em;
+  border-radius: 30px;
+  transition: .1s ease-in-out;
+  cursor: pointer;
+}
+.start-btn:hover {
+  background: #0a25408a;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 2.4em;
+  margin-left: 1rem;
+  background: transparent;
+  color: #0a2540;
+  transition: .1s ease-in-out;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  color: #0a25408a;
+}
+
+.companies-logo {
+  margin-block: 10em;
+}
+
+.UserLogoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 60px);
+  grid-auto-flow: row;
+  grid-row-gap: 3rem;
+}
+
+@media (max-width: 767px) {
+  .UserLogoGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 столбца на узких экранах */
+    grid-template-rows: auto; /* Автоматическое количество строк */
+  }
+}
+
+/* Медиа-запрос для планшетов и более крупных экранов */
+@media (min-width: 768px) {
+  .UserLogoGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца на средних экранах */
+    grid-template-rows: auto; /* Автоматическое количество строк */
+  }
+}
+
+/* Медиа-запрос для более широких экранов, например, ноутбуков и десктопов */
+@media (min-width: 1200px) {
+  .UserLogoGrid {
+    grid-template-columns: repeat(4, 1fr); /* 4 столбца на широких экранах */
+    grid-template-rows: auto;
+  }
+}

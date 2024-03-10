@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  padding-top: 23vh;
+}
+
+.hero-title-container {
+  position: relative;
+  width: calc(100% - 20px);
+}
+
+.hero-title {
+  color: #3a3a3a;
+  mix-blend-mode: color-burn;
+  line-height: 1.05;
+  font-size: 6rem;
+  letter-spacing: -0.07em;
+  font-weight: 700;
+  max-width: 12ch;
+  margin: 0;
+}
+@media (max-width:590px) {
+  .hero-title {
+    line-height: 1.01;
+    font-size: 5rem;
+  }
+}
+
+.hero-title[data-overlay] {
+  mix-blend-mode: revert;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0a2540;
+  z-index: 2;
+  opacity: 0.3;
+}
+
+.canvas-container {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  height: 65vh;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 105%);
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#gradient-canvas {
+  width:100%;
+  height:105%;
+  --gradient-color-1: #a960ee; 
+  --gradient-color-2: #ff333d; 
+  --gradient-color-3: #90e0ff;  
+  --gradient-color-4: #ffcb57;
+}
+
+
+/* secondHeader */
+.ul_buttons a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.ul_buttons {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0;
+  gap: 10px;
+  margin-left: 5px;
+}
+.ul_buttons a {
+  transition: .1s ease-in-out;
+}
+
+.contact_form:hover a {
+  color: #eaeaeac1;
+}
+
+li button {
+  padding: 15px;
+  background: none;
+  border: none;
+  letter-spacing: .2px;
+  font: var(--fontWeightBold) 15px/1.6 var(--fontFamily);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: .1s ease-in-out;
+}
+
+li button:hover {
+  color: #e9e9e9c1;
+}
+
+.ul_buttons li:last-child button {
+  cursor: pointer;
+}
+
+.UserLogo {
+  fill: var(--userLogoColor, #fff);
+  transition: .1s ease-in-out;
+}
+.UserLogo:hover {
+  fill: var(--userLogoColor, #e9e9e9c1);
+}
+
+.reg_forms a {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.spaceBetween {
+  column-gap: 16px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.nav_header_list {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.nav_header_Contact {
+  max-width: 385px;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+} 
+
+.reg_form {
+  display: flex;
+  background: hsla(0,0%,100%,0.2);
+  width: 94px;
+  height: 33px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: #fff;
+  transition: .1s ease-in-out;
+}
+.reg_form:hover {
+  background: hsla(0, 0%, 100%, 0.408);
+  color: #fff;
+}
+
+.buttons-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 68px;
+}
+
+.pr-item {
+  cursor: pointer;
+}
